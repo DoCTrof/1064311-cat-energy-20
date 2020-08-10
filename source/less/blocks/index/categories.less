@@ -1,0 +1,115 @@
+.categories {
+  .container-fluid();
+
+  &__wrapper {
+    font-weight: 400;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 25px 19px 20px;
+    background-color: @basic-grey;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: @basic-green;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 20px;
+    }
+
+    &--slimming::after {
+      top: 22px;
+      left: 29px;
+      width: 35px;
+      height: 49px;
+      background-image: url('../img/icon-cat-slim.svg');
+    }
+
+    &--weightgain::after {
+      top: 35px;
+      left: 13px;
+      width: 67px;
+      height: 28px;
+      background-image: url('../img/icon-cat-pro.svg');
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    padding: 13px 0;
+    padding-left: 71px;
+    font-family: @base-font;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: @spesial_dark-grey-darken;
+  }
+
+  &__description {
+    margin-bottom: 20px;
+    padding-bottom: 24px;
+    font-family: @secondary-font;
+    font-size: 14px;
+    line-height: 18px;
+    border-bottom: 1px solid #d9d9d9;
+    color: @spesial_dark-grey;
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: @base-font;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @spesial_dark-grey-darken;
+
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+    }
+
+    &::before {
+      order: 1;
+      margin-left: 12px;
+      width: 19px;
+      height: 3px;
+      background-color: @spesial_dark-grey-darken;
+    }
+
+    &::after {
+      order: 2;
+      border: 5.5px solid transparent;
+      border-left-color: @spesial_dark-grey-darken;
+    }
+
+    &:hover::before {
+      width: 27px;
+    }
+
+    &:active {
+      opacity: 0.3;
+      transition: none;
+    }
+  }
+}

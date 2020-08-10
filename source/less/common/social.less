@@ -1,0 +1,47 @@
+.social {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0 21px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social__list {
+  .reset-list-style();
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 38px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__icon {
+  fill: @basic-green;
+
+  &:hover {
+    fill: @basic-green;
+  }
+
+  &:active {
+    fill-opacity: .3;
+  }
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--facebook {
+    width: 10px;
+    height: 19px;
+  }
+}

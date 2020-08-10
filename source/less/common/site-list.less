@@ -1,0 +1,30 @@
+.site-list__item {
+  border-top: 1px solid #e6e6e6;
+
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  a {
+    display: block;
+    padding: 24px 0;
+    font-family: @base-font;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: @spesial_dark-grey-darken;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  a[href] {
+    &:hover {
+      color: rgba(@spesial_dark-grey-darken, .6);
+    }
+
+    &:active {
+      color: rgba(@spesial_dark-grey-darken, .3);
+    }
+  }
+}

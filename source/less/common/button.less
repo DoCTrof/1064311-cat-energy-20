@@ -1,0 +1,44 @@
+.button {
+  background-color: @basic-green;
+  display: block;
+  padding: 12px 26px 12px 29px;
+  font-family: @base-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: @basic-white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: none;
+  outline: none;
+  border: none;
+
+  &:hover {
+    text-decoration: none;
+    background-color: @basic-green-2;
+  }
+
+  &:active {
+    color: rgba(@basic-white, .3);
+    text-decoration: none;
+    background-color: @basic-green-2;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+
+  &--gray {
+    color: @spesial_dark-grey;
+    background-color: @basic-grey;
+
+    &:hover {
+      background-color: @special_grey-light;
+    }
+
+    &:active {
+      color: rgba(@spesial_dark-grey, .4);
+    }
+  }
+}

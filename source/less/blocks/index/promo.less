@@ -1,0 +1,49 @@
+.promo {
+  .container-fluid();
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    min-height: 306px;
+    background-image: url('../img/index-background-mobile@1x.jpg');
+    background-color: #63a73a;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__wrapper {
+    padding-top: 28px;
+    padding-bottom: 22px;
+    font-family: @base-font;
+    text-align: center;
+    color: @basic-white;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 28px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+  }
+
+  &__slogan {
+    margin: 0;
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+
+  &__image {
+    width: 280px;
+    height: 270px;
+    margin: 0 auto;
+  }
+}
